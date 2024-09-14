@@ -1,0 +1,82 @@
+.card-product {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: var(--space-8);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border: 1px solid var(--black);
+  }
+  &:hover .card-product-price {
+    top: -60px;
+  }
+}
+.card-product-anchor {
+  text-decoration: none;
+}
+.card-product-img {
+  background-color: #EBEEEF;
+  img {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+.card-product-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-5);
+  padding: 0 var(--space-2);
+  gap: var(--space-4);
+}
+
+.card-product-title{
+  font-size: var(--space-4);
+  font-weight: var(--f-w-700);
+  color: var(--black);
+  a {
+    text-decoration: none;
+    color: var(--black);
+  }
+}
+
+.card-product-category {
+  font-size: var(--space-4);
+  font-weight: var(--f-w-300);
+  color: var(--gray-500);
+  text-transform: capitalize;
+}
+
+.card-product-price {
+  position: absolute;
+  top: -52px;
+  background-color: var(--white);
+  color: var(--black);
+  padding: 0.5rem;
+}
+
+.card-product-tags {
+  display: flex;
+  gap: var(--space-2);
+  font-size: var(--space-4);
+  font-weight: var(--f-w-300);
+  color: var(--gray-500);
+  text-transform: capitalize;
+  margin-bottom: var(--space-2);
+}
+
+.card-product-button-car {
+  button {
+    background-color: transparent;
+    padding: var(--space-2) var(--space-6);
+    font-weight: var(--f-w-700);
+    font-family: var(--font-family);
+    border: 1px solid var(--black);
+    border-radius: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}
+

@@ -1,0 +1,25 @@
+.page-title-box {
+  padding: var(--space-5) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.page-title-text {
+  h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  p {
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--gray-500);
+  }
+}
+.page-title-button {
+  padding: 1rem 0;
+}

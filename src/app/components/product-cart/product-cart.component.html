@@ -1,0 +1,24 @@
+<div class="product-cart-box">
+  <div (click)="deleteProductCart()" class="product-delete-cart">
+    <p>X</p>
+  </div>
+  <div class="product-cart-image">
+    <img src="{{product.image}}" alt="product image" />
+  </div>
+  <div class="product-cart-body">
+    <div class="product-cart-title">
+      <h3>{{product.name}}</h3>
+    </div>
+    <div class="product-cart-description">
+      <p>{{product.description}}</p>
+    </div>
+    <div class="product-cart-cantidad">
+      <button (click)="removeCantidad()">-</button>
+      <p>{{product.cantidad}}</p>
+      <button (click)="addCantidad()">+</button>
+    </div>
+    <div class="product-cart-total">
+      <h3>$ {{product.price * product.cantidad | number}}</h3>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <app-page-title
+  titlePage="Zapatos para Hombre"
+  subtitlePage="Un amplio catálogo de zapatos y calzado de hombre adidas con los mejores diseños y tecnología.">
+  </app-page-title>
+  <div class="filters-section">
+    <div class="form-group">
+      <label for="filter-by-price">Ordenar por:</label>
+      <select class="form-select" (change)="orderByPrice($event)" name="filter-by-price" id="filter-by-price">
+        <option value="default" selected>Seleccione una opción</option>
+        <option value="desc">Precio: de mayor a menor</option>
+        <option value="asc">Precio: de menor a mayor</option>
+      </select>
+    </div>
+  </div>
+  <div class="products-grid">
+      <app-card-product
+      *ngFor="let item of productsArray"
+      [productInfo]="item"></app-card-product>
+  </div>
+</div>

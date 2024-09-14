@@ -1,0 +1,83 @@
+/* Colors */
+$white: #ffffff;
+$black: #000000;
+$gray-100: #ECEFF1;
+$gray-200: #CFD8DC;
+$gray-300: #B0BEC5;
+$gray-400: #90A4AE;
+$gray-500: #6c808b;
+$accent-100: #0071ae;
+
+/* Breackpoints */
+$bp-xsmall: 390px;
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-xlarge: 1508px;
+
+/* Typography */
+$font-family: 'Barlow', sans-serif;
+$f-w-300: 300;
+$f-w-400: 400;
+$f-w-500: 500;
+$f-w-600: 600;
+$f-w-700: 700;
+$f-w-800: 800;
+
+/* Spaces */
+$font-base: 16px;
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.25rem;
+$space-6: 1.5rem;
+$space-7: 1.75rem;
+$space-8: 2rem;
+$space-9: 2.25rem;
+$space-10: 2.5rem;
+$space-11: 2.75rem;
+$space-12: 3rem;
+$space-13: 3.25rem;
+$space-14: 3.5rem;
+$space-15: 3.75rem;
+$space-16: 4rem;
+
+:root {
+  /* Colors */
+  --white: #{$white};
+  --black: #{$black};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --accent-100: #{$accent-100};
+
+  /* Typography */
+  --font-family: #{$font-family};
+  --f-w-300: #{$f-w-300};
+  --f-w-400: #{$f-w-400};
+  --f-w-500: #{$f-w-500};
+  --f-w-600: #{$f-w-600};
+  --f-w-700: #{$f-w-700};
+  --f-w-800: #{$f-w-800};
+  /* Space */
+  --font-base: #{$font-base};
+  --space-1: #{$space-1};
+  --space-2: #{$space-2};
+  --space-3: #{$space-3};
+  --space-4: #{$space-4};
+  --space-5: #{$space-5};
+  --space-6: #{$space-6};
+  --space-7: #{$space-7};
+  --space-8: #{$space-8};
+  --space-9: #{$space-9};
+  --space-10: #{$space-10};
+  --space-11: #{$space-11};
+  --space-12: #{$space-12};
+  --space-13: #{$space-13};
+  --space-14: #{$space-14};
+  --space-15: #{$space-15};
+  --space-16: #{$space-16};
+}

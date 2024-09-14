@@ -1,0 +1,39 @@
+<div *ngIf="producto" class="product-box">
+  <div class="product-image">
+    <img [src]="producto.image" alt="Hola mundo">
+    <img [src]="producto.image" alt="Hola mundo">
+    <img [src]="producto.image" alt="Hola mundo">
+    <img [src]="producto.image" alt="Hola mundo">
+  </div>
+  <div class="product-info">
+    <div class="product-category">
+        <p>{{producto.categories[0] | titlecase}}</p>
+    </div>
+    <div class="product-title">
+      <h1>{{producto.name | uppercase}}</h1>
+    </div>
+    <div class="product-price">
+      <p>{{producto.price | number}}</p>
+    </div>
+    <div class="product-description">
+      <p>{{producto.description}}</p>
+    </div>
+    <div class="product-review">
+      <div class="product-stars">
+        <ul>
+          <li>☆</li>
+          <li>☆</li>
+          <li>☆</li>
+          <li>☆</li>
+          <li>☆</li>
+        </ul>
+      </div>
+      <div class="product-reviews">
+        <p>3 Reseñas</p>
+      </div>
+    </div>
+    <div class="product-button-add-car">
+      <button (click)="addToCart(producto.id)">Añadir al carrito</button>
+    </div>
+  </div>
+</div>

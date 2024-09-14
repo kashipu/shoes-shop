@@ -1,0 +1,28 @@
+<div class="card-product">
+  <div class="card-product-box">
+    <div class="card-product-img">
+      <a [routerLink]="'/zapatos/' + productInfo.id">
+        <img [src]="productInfo.image" alt="product image" />
+      </a>
+    </div>
+    <div class="card-product-body">
+      <div class="card-product-price">
+        <span>$ {{ productInfo.price | number }}</span>
+      </div>
+      <div class="card-product-title">
+        <a [routerLink]="'/zapatos/' + productInfo.id">
+          <h2>{{ productInfo.name }}</h2>
+        </a>
+      </div>
+      <div class="card-product-category">
+        <h3> {{ productInfo.categories[0]}}</h3>
+      </div>
+      <div class="card-product-tags">
+        <h3 *ngFor="let tag of productInfo.tags">{{tag | titlecase}}</h3>
+      </div>
+      <div class="card-product-button-car">
+        <button (click)="addToCart(productInfo.id)">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>

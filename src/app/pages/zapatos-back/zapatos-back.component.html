@@ -1,0 +1,13 @@
+<div class="container">
+  <app-page-title
+  titlePage="Zapatos para Hombre"
+  subtitlePage="Un amplio catálogo de zapatos y calzado de hombre adidas con los mejores diseños y tecnología.">
+  </app-page-title>
+  <div class="products-grid">
+      <app-card-product [productInfo]="productoHttp[0]"></app-card-product>
+      <app-card-product [productInfo]="productoHttp[0]"></app-card-product>
+      <app-card-product [productInfo]="productoHttp[0]"></app-card-product>
+      <app-card-product [productInfo]="productoHttp[0]"></app-card-product>
+  </div>
+  <p style="color: red;">Zapato traido desde <a target="_blank" href="https://ecommerce-backend-5x1x.onrender.com/productos">Backend</a> para conocer los endpoints y la documentación <a target="_blank" href="https://ecommerce-backend-5x1x.onrender.com/api">Swagger</a></p>
+</div>

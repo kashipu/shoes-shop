@@ -1,0 +1,72 @@
+.home-box {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-1);
+}
+
+.home-box a {
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  text-shadow: 0px 0px 11px rgba(0,0,0,0.74);
+}
+
+.background-image-women {
+  background-image: url(../../assets/img/women-photo.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) contrast(1.2);
+}
+
+.background-image-men {
+  background-image: url(../../assets/img/men-running.webp);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) contrast(1.2);
+}
+
+.background-image-kids {
+  background-image: url(../../assets/img/kids-run.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%) contrast(1.2);
+}
+
+.home-box a:hover {
+  background-color: var(--white);
+  filter: grayscale(0%);
+}
+
+.home-box a:hover .item-home h2 {
+  color: var(--white);
+  font-size: var(--space-15);
+}
+
+.item-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: var(--white);
+    font-size: var(--space-10);
+    font-weight: var(--f-w-700);
+  }
+}
+
+@media (max-width: $bp-medium) {
+  .home-box {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+}
